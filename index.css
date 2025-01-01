@@ -28,7 +28,6 @@ body {
     animation: zoomIn 1.5s ease-in-out;
 }
 
-/* Keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -57,5 +56,43 @@ body {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+
+.project-image {
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 100%; 
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.animate-video {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    width: 100%;
+    height: auto;
+}
+
+.animate-video:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .project-image {
+        width: 100%;
+        height: auto; 
+    }
+
+    .animate-video {
+        max-width: 100%; 
     }
 }
