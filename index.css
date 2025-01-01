@@ -1,0 +1,8 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.perfil img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
