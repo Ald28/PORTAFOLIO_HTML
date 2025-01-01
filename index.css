@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -17,7 +16,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Animations */
 .animate-text {
     animation: fadeIn 1.5s ease-in-out;
 }
