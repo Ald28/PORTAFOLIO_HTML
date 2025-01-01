@@ -1,8 +1,63 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
-.perfil img {
-    max-width: 150px;
+
+.perfil-img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    border: 4px solid #007bff;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.perfil-img:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+.animate-text {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-card {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.animate-video {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
